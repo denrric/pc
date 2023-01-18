@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A95 | Build • Disrupt • Scale </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <a href="/index.html"><img class="usn logo" src="/assets/logo.svg" alt=""></a>
+            </div>
+            <div class="nav-links">
+                <h3><a href="#">Thoughts</a></h3>
+                <h3 class="ml-20"><a href="https://www.instagram.com/a95labs/" target="_blank">@a95labs</a></h3>
+            </div>
+
+        </header>
+
+        <div class="innerwrapper">
+            <div>
+                <h1 class="glitch" data-text="def a95:">def a95:</h1>
+                <!-- <div class="head-title">
+                    <h1 class="mr-35 ">Build /</h1>
+                    <h1 class="mr-35 ">Disrupt /</h1>
+                    <h1>Scale</h1>
+                </div> -->
+              
+                <p>It is not the strongest of the species that survive, nor the most intelligent, but the one most
+                    responsive to change.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="fpd usn">
+                © 2023 A95, <a href="/privacy.html"><span style="text-decoration: underline;">Privacy</span></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+        var tl = gsap.timeline({ defaults: { duraion: 1 } })
+        tl.from("h1", { opacity: 0, duration: 2, delay: 0.5, stagger: 0.6 })
+            .from('p', { opacity: 0, duration: 1, ease: "circ.inOut" }, "-=1.5")
+            .from('h3', { opacity: 0, duration: 1, ease: "circ.inOut", stagger: 0.6 }, "-=1.2")
+            // .from('.logo', { width: 0, duration: 1, ease: "circ.inOut"}, "-=1.2")
+            .from('.rotate', { opacity: 0, duration: 1, ease: "circ.inOut" })
+    </script>
+</body>
+
+</html>
