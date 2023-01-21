@@ -20,7 +20,7 @@
                 <a href="./index.html"><img class="usn logo" src="./assets/logo.svg" alt=""></a>
             </div>
             <div class="nav-links">
-                <h3><a href="#">About</a></h3>
+                <h3><a href="./about.html">About</a></h3>
                 <h3 class="ml-20"><a href="#">Thoughts</a></h3>
                 <h3 class="ml-20"><a href="https://www.instagram.com/a95labs/" target="_blank">@a95labs</a></h3>
             </div>
@@ -30,7 +30,8 @@
         <div class="innerwrapper">
             <div>
                 <h1 class="glitch" data-text="About">About</h1>              
-                <p>We Build / invest in early stage startups / businesses and help them scale exponentially.
+                <p>
+                    We build and invest in early-stage startups and businesses, assisting them in scaling exponentially through the use of product and data science to engineer N-of-1 companies.
                 </p>
             </div>
         </div>
@@ -45,8 +46,6 @@
         var tl = gsap.timeline({ defaults: { duraion: 1 } })
         tl.from("h1", { opacity: 0, duration: 2, delay: 0.5, stagger: 0.6 })
             .from('p', { opacity: 0, duration: 1, ease: "circ.inOut" }, "-=1.5")
-            .from('h3', { opacity: 0, duration: 1, ease: "circ.inOut", stagger: 0.6 }, "-=1.2")
-            // .from('.logo', { width: 0, duration: 1, ease: "circ.inOut"}, "-=1.2")
             .from('.rotate', { opacity: 0, duration: 1, ease: "circ.inOut" })
     </script>
 </body>
