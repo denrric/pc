@@ -22,6 +22,18 @@ body{
 
 }
 
+.innerwrapper_thoughts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13% 140px;
+
+}
+
+.p-wide{
+  max-width:700px !important;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -59,6 +71,16 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+
+a:hover{ 
+  color: #9ea7b0;
+  transition-duration: .2s;
+ }
+ 
+ .tdu{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+ }
 
 h1{
     font-size: 90px;
